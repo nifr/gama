@@ -33,6 +33,7 @@ jobs:
       - name: Create Release
         uses: ncipollo/release-action@v1
         with:
+          tag: {{ inputs.tag }}
           artifacts: "release/gama-linux-amd64,release/gama-linux-arm64,release/gama-macos-amd64,release/gama-macos-arm64"
           draft: true
 
