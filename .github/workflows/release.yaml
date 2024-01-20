@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+        with:
+          ref: ${{ inputs.tag }}
 
       - name: Setup Go
         uses: actions/setup-go@v3
